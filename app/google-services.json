@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "711742602189",
+    "project_id": "gaana-ea58e",
+    "storage_bucket": "gaana-ea58e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711742602189:android:292fd6969c6aa5b6c66284",
+        "android_client_info": {
+          "package_name": "com.example.musicplayerapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711742602189-bv6dj75veuguterpqq6iro89g8h9mfuj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARPIfnepJwOzjSGq-wUeqKyKtORBx9gxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711742602189-bv6dj75veuguterpqq6iro89g8h9mfuj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

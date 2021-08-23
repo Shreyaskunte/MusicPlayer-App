@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchViewSA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/custom_search_view"
+                android:focusable="false"
+                app:iconifiedByDefault="false"
+                app:queryHint="@string/search_song"
+                app:searchIcon="@drawable/ic_baseline_search_24"
+
+                />
+
+
+            <ImageButton
+                android:id="@+id/backBtnSL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/back_btn"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/selectionRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutF"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="0dp"
+            android:scrollbarThumbVertical="@drawable/downarrow"
+            android:scrollbars="vertical"
+            android:paddingBottom="40dp"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

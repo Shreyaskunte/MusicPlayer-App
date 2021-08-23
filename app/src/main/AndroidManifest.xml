@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.musicplayerapplication">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gaana">
+        <activity
+            android:name=".NotificationReceiver"
+            android:exported="true" />
+        <activity
+            android:name=".ApplicationClass"
+            android:exported="true" />
+        <activity
+            android:name=".SelectionActivity"
+            android:exported="true"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".PlaylistDetails"
+            android:exported="true"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".NowPlaying"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".MusicService"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".PlayListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PlayerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MusicAdapter"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Music"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".FavouriteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SongsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
